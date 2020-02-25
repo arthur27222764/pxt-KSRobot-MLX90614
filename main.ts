@@ -1,5 +1,5 @@
 
-enum Temperature_State {
+export enum Temperature_State {
     //% blockId="ObjectTempC" block="ObjectTempC"
     ObjectTempC = 1,
     //% blockId="AmbientTempC" block="AmbientTempC"
