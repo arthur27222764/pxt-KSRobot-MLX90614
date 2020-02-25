@@ -1,13 +1,13 @@
 
 enum Temperature_State {
-    //%block="ObjectTempC"
-    ObjectTempC,
-    //%block="AmbientTempC"
-    AmbientTempC,
-    //%block="ObjectTempF"
-    ObjectTempF,
-    //%block="AmbientTempF"
-    AmbientTempF
+    //% blockId="ObjectTempC" block="ObjectTempC"
+    ObjectTempC = 1,
+    //% blockId="AmbientTempC" block="AmbientTempC"
+    AmbientTempC = 2,
+    //% blockId="ObjectTempF" block="ObjectTempF"
+    ObjectTempF = 3,
+    //% blockId="AmbientTempF" block="AmbientTempF"
+    AmbientTempF = 4
 }
 
 //%color=#FC325B icon="\uf2c9" block="KSRobot_MLX90614"
@@ -57,7 +57,7 @@ namespace KSRobot_MLX90614 {
         return val;
     }
 
-    
+
 
     function readTemp(reg: NumberFormat.UInt8BE): number {
         let temp = i2c_read16(reg)
@@ -79,6 +79,7 @@ namespace KSRobot_MLX90614 {
         return readTemp(MLX90614_TA);
     }
 
+    //% blockId=KSRobot_Temperature
     //%block="Temperature %state"
     export function read_temperature(state: Temperature_State): number {
         switch (state) {
