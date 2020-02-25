@@ -1,8 +1,8 @@
 # KAISE KSRobot MLX90614 Infrared Thermometer
-. GND => GND
-. VCC => 3V
-. SDA => P20
-. SCL => P19
+- . GND => GND
+- . VCC => 3V
+- . SDA => P20
+- . SCL => P19
 
 ## User Guide 
 ![image](images/block.png)
