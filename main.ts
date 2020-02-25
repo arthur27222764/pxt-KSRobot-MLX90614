@@ -1,17 +1,18 @@
 
-export enum Temperature_State {
-    //% blockId="ObjectTempC" block="ObjectTempC"
-    ObjectTempC = 1,
-    //% blockId="AmbientTempC" block="AmbientTempC"
-    AmbientTempC = 2,
-    //% blockId="ObjectTempF" block="ObjectTempF"
-    ObjectTempF = 3,
-    //% blockId="AmbientTempF" block="AmbientTempF"
-    AmbientTempF = 4
-}
 
 //%color=#FC325B icon="\uf2c9" block="KSRobot_MLX90614"
 namespace KSRobot_MLX90614 {
+
+    export enum Temperature_State {
+        //% blockId="ObjectTempC" block="ObjectTempC"
+        ObjectTempC = 1,
+        //% blockId="AmbientTempC" block="AmbientTempC"
+        AmbientTempC = 2,
+        //% blockId="ObjectTempF" block="ObjectTempF"
+        ObjectTempF = 3,
+        //% blockId="AmbientTempF" block="AmbientTempF"
+        AmbientTempF = 4
+    }
 
     const MLX90614_I2CADDR = 0x5A
 
